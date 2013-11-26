@@ -1,0 +1,31 @@
+{
+  "name": "protactorsample",
+  "version": "0.0.0",
+  "description": "0.1.0",
+  "main": "src/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules\bin\protractor protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinnylinck/protactorsample.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Selenium",
+    "Protractor",
+    "E2E"
+  ],
+  "author": "Fabio Akira, Vinicius Linck",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vinnylinck/protactorsample/issues"
+  },
+  "homepage": "https://github.com/vinnylinck/protactorsample",
+  "devDependencies": {
+    "protractor": "~0.13.0"
+  }
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: calibri;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+input {
+    padding: 4px;
+}
+
+div.line {
+    clear: both;
+    width: 100%;
+}
+
+div.center {
+    text-align: center;
+}
+
+div.page {
+    margin: auto;
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+div.login div.label {
+    float: left;
+    text-align:: right;
+    padding: 6px;
+    width: 70px;
+}
+
+div.login input.login_button {
+    padding: 4px;
+}
+
+div.login span.message {
+    color: red;
+    margin-top: 3px;
+}
+
+div.user-list {
+    width: 400px;
+}
+
+div.user-list table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+div.user-list table td {
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding: 5px;
+}

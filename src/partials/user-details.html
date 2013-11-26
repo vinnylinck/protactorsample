@@ -1,0 +1,26 @@
+<div class="page user-details">
+    <a href="" data-ng-click="go('/login')">Logout</a><br /><br />
+    <h1>User Details</h1>
+    <div>
+        <table>
+            <tr>
+                <td>Login</td>
+                <td><input type="text" data-ng-model="user.login" class="login" data-ng-disabled="isUpdate"></td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" data-ng-model="user.name" class="name"></td>
+            </tr>
+            <tr>
+                <td>Projeto</td>
+                <td><input type="text" data-ng-model="user.project" class="project"></td>
+            </tr>
+        </table>
+        <div class="line">
+            <div class="label">&nbsp;</div>
+            <input type="button" data-ng-click="updateUser();" value="Update" class="update_button" data-ng-show="user.login" />
+            <input type="button" data-ng-click="deleteUser();" value="Delete" data-ng-show="isUpdate" />
+            <input type="button" data-ng-click="go('/users');" value="Back" />
+        </div>
+    </div>
+</div>

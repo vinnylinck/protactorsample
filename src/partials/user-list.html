@@ -1,0 +1,22 @@
+<div class="page user-list">
+    <a href="" data-ng-click="go('/login')">Logout</a><br /><br />
+    <h1 data-ng-bind="title"></h1>
+    <div>
+        <table>
+            <tr>
+                <td><b>Login</b></td>
+                <td><b>Nome</b></td>
+                <td><b>Projeto</b></td>
+            </tr>
+            <tr data-ng-repeat="user in users track by user.login">
+                <td data-ng-click="go('/user/{{user.login}}')" data-ng-bind="user.login"></td>
+                <td data-ng-bind="user.name"></td>
+                <td data-ng-bind="user.project"></td>
+            </tr>
+        </table>
+        <div class="line">
+            <div class="label">&nbsp;</div>
+            <input type="button" data-ng-click="go('/user/new');" class="add_button"  value="Add user" />
+        </div>
+    </div>
+</div>

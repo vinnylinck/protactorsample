@@ -1,0 +1,28 @@
+<!doctype html>
+<html data-ng-app="e2e">
+    <head>
+        <meta charset="UTF-8">
+        <title>End 2 end test</title>
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta http-equiv="cleartype" content="on">
+        <link rel="stylesheet" type="text/css" href="css/e2e.css">
+        
+    </head>
+    <body ng-controller="rootController">
+        
+        <!-- App Structure -->
+        <div data-ng-view></div>
+        
+        <!-- AngularJS libs -->
+        <script type="text/javascript" src="lib/angular/angular.js"></script>
+        <script type="text/javascript" src="lib/angular-route/angular-route.min.js"></script>
+        
+        <!-- Controllers -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers/loginController.js"></script>
+        <script type="text/javascript" src="js/controllers/rootController.js"></script>
+        <script type="text/javascript" src="js/controllers/userListController.js"></script>
+        <script type="text/javascript" src="js/controllers/userDetailsController.js"></script>
+        
+    </body>
+</html>

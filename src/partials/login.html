@@ -1,0 +1,25 @@
+<div class="page login">
+    <h1 data-ng-bind="title"></h1>
+    
+    <div>
+        <form class="formLogin" ng-submit="signIn()">
+            <div class="line">
+                <div class="label">Username:</div>
+                <input id="username" type="text" placeholder="Username" data-ng-model="username">
+                <span>(admin)</span>
+            </div>
+            <div class="line">
+                <div class="label">Password:</div>
+                <input type="password" placeholder="Password" data-ng-model="password">
+                <span>(admin)</span>
+            </div>
+            <div class="line center">
+                <span class="message" data-ng-bind="message"></span>
+            </div>
+            <div class="line">
+                <div class="label">&nbsp;</div>
+                <input type="button" data-ng-click="login();" class="login_button" value="Login">
+            </div>
+        </form>
+    </div>
+</div>
